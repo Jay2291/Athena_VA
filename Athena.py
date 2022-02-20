@@ -1,4 +1,4 @@
-from datetime import datetime
+import datetime
 import wikipedia
 import webbrowser as web
 import os
@@ -47,7 +47,7 @@ if __name__ == "__main__":
             pywhatkit.playonyt(song)
 
         elif 'time' in query:
-            strTime = datetime.datetime.now().strfttime("%H:%M:%S")
+            strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"Right now time is {strTime}")
             print(strTime)
         
