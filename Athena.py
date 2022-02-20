@@ -1,13 +1,14 @@
+from datetime import datetime
 import wikipedia
 import webbrowser as web
 import os
 import pywhatkit
 from ttsaudio import speak
-from greeting import wishMe
+from greet import wishMe
 from command import takeCommand
 
 if __name__ == "__main__":
-    #wishMe()
+        wishMe()
     #while True:
         query = takeCommand().lower()
         
@@ -44,3 +45,14 @@ if __name__ == "__main__":
             print("Playing "+song)
             speak("Please Wait")
             pywhatkit.playonyt(song)
+
+        elif 'time' in query:
+            strTime = datetime.datetime.now().strfttime("%H:%M:%S")
+            speak(f"Right now time is {strTime}")
+            print(strTime)
+        
+        elif 'code' in query:
+            codePath = "C:\\Users\\JAY JAGTAP\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            speak("Please Wait")
+            print("Please Wait...")
+            os.startfile(codePath)
