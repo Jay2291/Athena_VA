@@ -1,9 +1,11 @@
+from playsound import playsound
 import speech_recognition as sr
 from ttsaudio import speak
 
 def takeCommand():
     r  = sr.Recognizer()
     with sr.Microphone() as source:
+        playsound('note/Beep.mp3')
         print("Listening...")
         audio = r.listen(source)
     

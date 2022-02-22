@@ -9,4 +9,4 @@ def wishMe():
         speak("Good Afternoon")
     else:
         speak("Good Evening")
-    speak(" How may I help you today, Sir?")
+    speak("How may I help you today?")
