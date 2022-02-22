@@ -20,6 +20,10 @@ if __name__ == "__main__":
             print(results)
             speak(results)
 
+        elif 'are you' in query:
+            speak("Allow me to introduce myself, I am Athena, a virtual Artificial Intelligence, and I am here to assist you with a variety of tasks as best I can.")
+            print("Allow me to introduce myself, I am Athena, a virtual Artificial Intelligence, and I am here to assist you with a variety of tasks as best I can.")
+
         elif 'open youtube' in query:
             speak("Opening YouTube...")
             print("Please Wait...")
@@ -56,3 +60,8 @@ if __name__ == "__main__":
             speak("Please Wait")
             print("Please Wait...")
             os.startfile(codePath)
+
+        elif 'date' in query:
+            tod = datetime.date.today().strftime("%B %d %Y")
+            print(tod)
+            speak("Today's date is: "+tod)

@@ -9,4 +9,4 @@ def wishMe():
         speak("Good Afternoon")
     else:
         speak("Good Evening")
-    speak("Allow me to introduce myself, I am Athena, a virtual Artificial Intelligence, and I am here to assist you with a variety of tasks as best I can. How may I help you today, Sir?")
+    speak(" How may I help you today, Sir?")
