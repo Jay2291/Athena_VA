@@ -1,4 +1,5 @@
 import datetime
+from re import X
 import time
 import sys
 import wikipedia
@@ -13,8 +14,8 @@ from command import takeCommand
 if __name__ == "__main__":
     wishMe()
     while True:
+        
         query = takeCommand().lower()
-        time.sleep(4)
         
         if 'wikipedia' in query:
             speak('Searching Wikipedia')
@@ -182,5 +183,6 @@ if __name__ == "__main__":
             print('good bye, have a nice day!')
             speak('good bye, have a nice day!')
             sys.exit()
-
+    
+        time.sleep(4)
      
